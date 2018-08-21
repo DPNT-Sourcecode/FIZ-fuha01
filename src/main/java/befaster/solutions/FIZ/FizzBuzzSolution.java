@@ -30,10 +30,10 @@ public String fizzBuzz(Integer number) {
         
     }
     
-    private boolean isDeluxe(Integer number) {
-	return number.toString().matches("(\\d)\\1+");
-	
-}
+    private boolean isDeluxe(Integer number)
+    {
+	return number.toString().matches("(\\d)\\1+");	
+    }
 
 	private boolean isFizz(Integer number){
     	
