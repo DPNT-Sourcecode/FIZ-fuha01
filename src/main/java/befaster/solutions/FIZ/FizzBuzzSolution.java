@@ -22,6 +22,10 @@ public String fizzBuzz(Integer number) {
     	{    	    
     		sb= (sb.length()==0)?sb.append("deluxe"):sb.append(" deluxe");    		
     	}
+    	if(isFakeDeluxe(number))
+    	{    	    
+    		sb= (sb.length()==0)?sb.append("fake deluxe"):sb.append(" fake deluxe");    		
+    	}
     	if(sb.length()==0)
     	{
     		sb.append(number.toString());
@@ -32,7 +36,12 @@ public String fizzBuzz(Integer number) {
     
     private boolean isDeluxe(Integer number)
     {
-	return number.toString().matches("(\\d)\\1+");	
+	return number.toString().matches("(\\d)\\1+")&& number%2==0;
+    }
+    
+    private boolean isFakeDeluxe(Integer number)
+    {
+	return number.toString().matches("(\\d)\\1+")&& number%2!=0;
     }
 
 	private boolean isFizz(Integer number){
