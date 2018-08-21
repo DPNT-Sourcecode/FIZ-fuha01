@@ -58,6 +58,16 @@ public class FizzBuzzImplementation implements FizzBuzz {
 	    	}
 	    }
 
+	//Previous Implementations of Deluxe and Fake Deluxe methods
+	   /* private boolean isOldDeluxe(Integer number)
+	    {
+		 return number.toString().matches("(\\d)\\1+")&& isEven(number);
+	    }
+	    
+	    private boolean isOldFakeDeluxe(Integer number)
+	    {
+		return number.toString().matches("(\\d)\\1+")&& !isEven(number);
+	    }*/
 	
 
 
