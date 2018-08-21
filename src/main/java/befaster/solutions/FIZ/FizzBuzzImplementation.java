@@ -1,5 +1,10 @@
 package befaster.solutions.FIZ;
 
+/**
+ * @author Smita
+ * Final Implemenation based on R5 Challenge
+ *
+ */
 public class FizzBuzzImplementation implements FizzBuzz {
 
 	@Override

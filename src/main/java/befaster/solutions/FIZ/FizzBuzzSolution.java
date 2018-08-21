@@ -1,4 +1,9 @@
 package befaster.solutions.FIZ;
+/**
+ * @author Smita
+ * Final Solution for Fizz Buzz
+ *
+ */
 public class FizzBuzzSolution {
 
    
