@@ -14,7 +14,7 @@ public class FizzBuzzSolution {
     	}
     	if(number%5==0)
     	{    	    
-    		sb.append(" buzz");    		
+    		sb= (sb.length()==0)?sb.append("buzz"):sb.append(" buzz");    		
     	}
     	if(sb.length()==0)
     	{
