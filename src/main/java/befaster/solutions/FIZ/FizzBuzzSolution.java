@@ -34,14 +34,47 @@ public String fizzBuzz(Integer number) {
         
     }
     
+    private boolean isOldDeluxe(Integer number)
+    {
+	 return number.toString().matches("(\\d)\\1+")&& isEven(number);
+    }
+    
+    private boolean isOldFakeDeluxe(Integer number)
+    {
+	return number.toString().matches("(\\d)\\1+")&& !isEven(number);
+    }
+    
     private boolean isDeluxe(Integer number)
     {
-	return number.toString().matches("(\\d)\\1+")&& number%2==0;
+    	if((number%3==0&&number.toString().indexOf("3")!=-1)
+    			||(number%5==0&&number.toString().indexOf("5")!=-1)
+    			&& isEven(number)){
+    		return true;
+    	}else{
+    		return false;
+    	}
     }
     
     private boolean isFakeDeluxe(Integer number)
     {
-	return number.toString().matches("(\\d)\\1+")&& number%2!=0;
+    	if((number%3==0&&number.toString().indexOf("3")!=-1)
+    			||(number%5==0&&number.toString().indexOf("5")!=-1)
+    			&& !isEven(number)){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
+    
+    
+    
+    
+    private boolean isEven(Integer number){
+    	if(number%2==0){
+    		return true;
+    	}else{
+    		return false;
+    	}
     }
 
 	private boolean isFizz(Integer number){
